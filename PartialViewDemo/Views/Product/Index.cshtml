@@ -1,0 +1,15 @@
+﻿@model IEnumerable<PartialViewDemo.Models.Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Parent Page</h1>
+
+@* @Html.Partial("_ProductList",Model) *@
+
+@* <p>OR</p> *@
+
+
+@{
+    Html.RenderPartial("_ProductList", Model);
+}
